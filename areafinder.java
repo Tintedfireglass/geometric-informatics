@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.lang.Math;
-class geometry extends JFrame  implements ActionListener
+class geometry extends JFrame implements ActionListener
 {
     static JFrame frame;
     static JPanel dimensionpanel,shapepanel2D,shapepanel3D,propertyset,propertyset2D,propertyset3D,inputpanel,responsepanel;
@@ -215,6 +215,7 @@ class geometry extends JFrame  implements ActionListener
        cylinder.addActionListener(this);
        button.addActionListener(this);
     }
+    
     public void actionPerformed(ActionEvent e){    
      if((dimension2.isSelected())){  
      slantheight.setEnabled(true);diam.setEnabled(true);diag.setEnabled(true);circum.setEnabled(true);perim.setEnabled(true);
@@ -249,6 +250,7 @@ class geometry extends JFrame  implements ActionListener
      revalidate();
      
     } 
+    
     if ((circle.isSelected())&&  (dimension1.isSelected())){
         side.setEnabled(false);diameter.setEnabled(true);diagonal.setEnabled(false);circumference.setEnabled(true);
         perimeter.setEnabled(false);
